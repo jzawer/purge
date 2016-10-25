@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hello World!</title>
+		<link rel="stylesheet" href="node_modules/bulma/css/bulma.css" media="screen" title="no title">
+	</head>
+	<body>
+		<div class="columns">
+			<div class="column">
+				<h1>Herramienta de purgado</h1>
+			</div>
+		</div>
+		<div class="columns">
+			<div class="column">
+				<button id="select-directroy" class="button is-primary"> Seleccionar carpeta</button>
+				<span><input type="checkbox" id="recursive" /> recursivo</span>
+			</div>
+		</div>
+		<div class="columns">
+			<div class="column">
+				<div id="list">
+				</div>
+			</div>
+		</div>
+		<div class="columns">
+			<div class="column">
+				<button id="init-purge" class="button is-danger">Iniciar purga</button>
+				<div id="deleted-files">
+			</div>
+		</div>
+	</body>
+
+	<script>
+
+	require('./renderer.js');
+	</script>
+</html>
